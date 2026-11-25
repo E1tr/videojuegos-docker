@@ -1,0 +1,47 @@
+[
+  {
+    "_id": { "$oid": "6744a1b2c3d4e5f600000001" },
+    "titulo": "The Legend of Zelda: Breath of the Wild",
+    "estudio": "Nintendo EPD",
+    "plataforma": "Nintendo Switch",
+    "anio": 2017,
+    "genero": "Aventura",
+    "nota": 10
+  },
+  {
+    "_id": { "$oid": "6744a1b2c3d4e5f600000002" },
+    "titulo": "Hollow Knight",
+    "estudio": "Team Cherry",
+    "plataforma": "PC / Nintendo Switch",
+    "anio": 2017,
+    "genero": "Metroidvania",
+    "nota": 9.5
+  },
+  {
+    "_id": { "$oid": "6744a1b2c3d4e5f600000003" },
+    "titulo": "Elden Ring",
+    "estudio": "FromSoftware",
+    "plataforma": "PC / PS5 / Xbox Series X",
+    "anio": 2022,
+    "genero": "Action RPG",
+    "nota": 10
+  },
+  {
+    "_id": { "$oid": "6744a1b2c3d4e5f600000004" },
+    "titulo": "Hades",
+    "estudio": "Supergiant Games",
+    "plataforma": "PC / Nintendo Switch / PS5",
+    "anio": 2020,
+    "genero": "Roguelike",
+    "nota": 9.5
+  },
+  {
+    "_id": { "$oid": "6744a1b2c3d4e5f600000005" },
+    "titulo": "Red Dead Redemption 2",
+    "estudio": "Rockstar Games",
+    "plataforma": "PC / PS4 / Xbox One",
+    "anio": 2018,
+    "genero": "Mundo Abierto",
+    "nota": 9.5
+  }
+]

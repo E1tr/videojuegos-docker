@@ -1,0 +1,32 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+  <div class="header-row">
+    <h1>Mi colección de videojuegos</h1>
+    <span class="badge">{{ videojuegos.length }} juegos</span>
+  </div>
+
+  {% if videojuegos.length == 0 %}
+    <p class="empty">Todavía no hay videojuegos en la base de datos. Añade el primero.</p>
+  {% else %}
+    <div class="grid">
+      {% for juego in videojuegos %}
+        <article class="card">
+          <div class="card-top">
+            <span class="pill">{{ juego.genero }}</span>
+            <span class="score">{{ juego.nota }}/10</span>
+          </div>
+          <h2>{{ juego.titulo }}</h2>
+          <p class="meta">{{ juego.estudio }} · {{ juego.anio }}</p>
+          <p class="platform">{{ juego.plataforma }}</p>
+          <div class="card-actions">
+            <a href="/editar/{{ juego._id }}" class="btn btn-secondary">Editar</a>
+            <form action="/eliminar/{{ juego._id }}" method="POST" onsubmit="return confirm('¿Eliminar este videojuego?');">
+              <button type="submit" class="btn btn-danger">Eliminar</button>
+            </form>
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  {% endif %}
+{% endblock %}
